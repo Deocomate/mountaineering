@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  margin-left: 0px !important;
+}
+
+footer {
+  background-color: rgb(24, 48, 83);
+  padding-top: 30px;
+}
+footer .col-12 {
+  margin: 0px 0px 20px;
+  padding: 0px 30px;
+}
+footer .col-12 h5, footer .col-12 p {
+  color: white;
+}
+footer .col-12 h5 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+footer .col-12 p {
+  margin-bottom: 10px;
+  color: rgba(167, 167, 167, 0.826);
+}
+footer .col-12 .link-info {
+  display: flex;
+}
+footer .col-12 .link-info a {
+  display: flex;
+  color: white;
+  font-size: 30px;
+}
+footer .last {
+  border-top: 1px solid white;
+  text-align: center;
+  padding: 10px 0px;
+}
+footer .last span {
+  color: white;
+  font-size: 11px;
+}
+
+#blog-header {
+  height: 400px;
+  background-image: url("../img/bl1.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+#blog-header .container {
+  position: absolute;
+  top: 60%;
+  left: 0px;
+  width: 100%;
+  padding: 0px 50px;
+}
+#blog-header .container h1,
+#blog-header h6 {
+  color: white;
+}
+#blog-header .container h1 {
+  font-weight: bold;
+  font-size: 50px;
+}
+#blog-header .container h6 {
+  margin-top: 30px;
+}
+
+.list-post-contain {
+  margin: 20px auto;
+}
+.list-post-contain .list-post-item {
+  margin-bottom: 20px;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: relative;
+}
+.list-post-contain .list-post-item img {
+  width: 100%;
+  padding: 0px;
+}
+.list-post-contain .list-post-item .list-post-date {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  width: 60px;
+}
+.list-post-contain .list-post-item .list-post-date span {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+.list-post-contain .list-post-item .list-post-date span:first-child {
+  background-color: rgb(18, 138, 231);
+  display: block;
+  padding: 5px;
+  font-size: 25px;
+}
+.list-post-contain .list-post-item .list-post-date span:last-child {
+  background-color: rgb(15, 66, 133);
+  display: block;
+  font-size: 10px;
+  padding: 5px 0px;
+}
+.list-post-contain .list-post-item .list-post-info {
+  padding: 18px 30px;
+}
+.list-post-contain .list-post-item .list-post-info h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+.list-post-contain .list-post-item .list-post-info div p {
+  margin-bottom: 0px;
+}
+.list-post-contain .list-post-item .list-post-info div i {
+  color: rgb(24, 124, 225);
+  font-size: 10px;
+}
+.list-post-contain .list-post-item .list-post-info div span {
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+.list-post-contain .list-post-item .list-post-info #list-post-info-p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: rgba(57, 57, 57, 0.82);
+}
+.list-post-contain nav {
+  margin-top: 40px;
+}
+.list-post-contain nav .pagination-post {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-start;
+  padding-left: 0px;
+  align-items: center;
+}
+.list-post-contain nav li {
+  margin: 0px 5px;
+}
+.list-post-contain nav li.page-num {
+  margin: 0px 7px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.list-post-contain nav li.page-num:hover {
+  background-color: rgb(42, 105, 173);
+  cursor: pointer;
+}
+.list-post-contain nav li.page-num:hover a {
+  color: white;
+}
+.list-post-contain nav li a {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.recent-post-contain form div {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.recent-post-contain form div input,
+.recent-post-contain form div button {
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 1px;
+  border: none !important;
+}
+.recent-post-contain form div button {
+  color: white;
+  background-color: rgb(30, 172, 216);
+}
+.recent-post-contain .recent-post {
+  margin: 0 15px;
+}
+.recent-post-contain .recent-post h3 {
+  font-size: 18px;
+}
+.recent-post-contain .recent-post .recent-post-item {
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+}
+.recent-post-contain .recent-post .recent-post-item .img {
+  margin: 0px;
+}
+.recent-post-contain .recent-post .recent-post-item .description {
+  margin: 0px 10px;
+}
+.recent-post-contain .recent-post .recent-post-item img {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+}
+.recent-post-contain .recent-post .recent-post-item p {
+  color: rgba(128, 128, 128, 0.548);
+  font-size: 11px;
+  margin-bottom: 2px;
+}
+.recent-post-contain .recent-post .recent-post-item h5 {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.recent-post-contain .recent-post .recent-post-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 110%;
+  left: 0%;
+  height: 5px;
+  width: 0%;
+  background-color: rgb(67, 161, 228);
+  transition: 0.5s;
+}
+.recent-post-contain .recent-post .recent-post-item:hover:after {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
