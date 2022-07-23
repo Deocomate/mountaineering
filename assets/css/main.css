@@ -84,6 +84,11 @@ footer .last span {
   overflow: hidden;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: relative;
+  transition: 0.5s;
+}
+.list-post-contain .list-post-item:hover {
+  transform: scale(0.95);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .list-post-contain .list-post-item img {
   width: 100%;
@@ -196,33 +201,37 @@ footer .last span {
 .recent-post-contain .recent-post h3 {
   font-size: 18px;
 }
-.recent-post-contain .recent-post .recent-post-item {
+.recent-post-contain .recent-post a {
+  text-decoration: none;
+}
+.recent-post-contain .recent-post a .recent-post-item {
   margin-bottom: 20px;
   width: 100%;
   height: 40px;
   position: relative;
 }
-.recent-post-contain .recent-post .recent-post-item .img {
+.recent-post-contain .recent-post a .recent-post-item .img {
   margin: 0px;
 }
-.recent-post-contain .recent-post .recent-post-item .description {
+.recent-post-contain .recent-post a .recent-post-item .description {
   margin: 0px 10px;
 }
-.recent-post-contain .recent-post .recent-post-item img {
+.recent-post-contain .recent-post a .recent-post-item img {
   width: 40px;
   height: 40px;
   border-radius: 3px;
 }
-.recent-post-contain .recent-post .recent-post-item p {
+.recent-post-contain .recent-post a .recent-post-item p {
   color: rgba(128, 128, 128, 0.548);
   font-size: 11px;
   margin-bottom: 2px;
 }
-.recent-post-contain .recent-post .recent-post-item h5 {
+.recent-post-contain .recent-post a .recent-post-item h5 {
   font-size: 12px;
   margin-bottom: 0px;
+  color: black;
 }
-.recent-post-contain .recent-post .recent-post-item:after {
+.recent-post-contain .recent-post a .recent-post-item:after {
   content: "";
   display: block;
   position: absolute;
@@ -233,6 +242,6 @@ footer .last span {
   background-color: rgb(67, 161, 228);
   transition: 0.5s;
 }
-.recent-post-contain .recent-post .recent-post-item:hover:after {
+.recent-post-contain .recent-post a .recent-post-item:hover:after {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */
