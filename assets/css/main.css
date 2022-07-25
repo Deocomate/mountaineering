@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -34,6 +34,7 @@ footer .col-12 .link-info a {
   display: flex;
   color: white;
   font-size: 30px;
+  margin: 0 auto;
 }
 footer .last {
   border-top: 1px solid white;
@@ -43,6 +44,37 @@ footer .last {
 footer .last span {
   color: white;
   font-size: 11px;
+}
+
+.contact-link {
+  display: flex;
+  margin: 20px 0px;
+}
+.contact-link a {
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgb(41, 110, 206);
+  line-height: 45px;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: rgb(60, 103, 210);
+  transition: all 0.5s;
+}
+.contact-link a:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: none;
+}
+.contact-link a:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
+}
+.contact-link a:hover {
+  background-color: rgb(41, 110, 206);
+  color: white;
 }
 
 #blog-header {
@@ -156,6 +188,7 @@ footer .last span {
   align-items: center;
 }
 .list-post-contain nav li {
+  justify-content: center;
   margin: 0px 5px;
 }
 .list-post-contain nav li.page-num {
@@ -354,31 +387,61 @@ footer .last span {
   background: none;
   opacity: 0.7;
 }
-.contacts .contact-link {
-  display: flex;
+
+.post-comment-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 25px;
 }
-.contacts .contact-link a {
-  margin: 0;
-  width: 45px;
-  height: 45px;
-  border: 1px solid rgb(41, 110, 206);
-  line-height: 45px;
+.post-comment-item:first-of-type {
+  margin-top: 20px;
+}
+.post-comment-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.post-comment-item .post-react {
   display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.post-comment-item .post-react span {
+  margin: 0;
+  margin-right: 10px;
+}
+.post-comment-item .post-react span i {
   font-size: 20px;
-  color: rgb(60, 103, 210);
+  color: gray;
+  cursor: pointer;
   transition: all 0.5s;
 }
-.contacts .contact-link a:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  border-right: none;
+.post-comment-item .post-react span i:hover {
+  color: rgb(69, 69, 69);
 }
-.contacts .contact-link a:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-  border-left: none;
+
+.post-comment-paginate a {
+  color: black !important;
 }
-.contacts .contact-link a:hover {
-  background-color: rgb(41, 110, 206);
-  color: white;
+
+.post-heading {
+  margin: 70px 0px;
+}
+.post-heading h1 {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: rgb(0, 39, 86);
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 992px) {
+  .post-contain {
+    width: 90%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
