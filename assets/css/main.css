@@ -244,4 +244,141 @@ footer .last span {
 }
 .recent-post-contain .recent-post a .recent-post-item:hover:after {
   width: 100%;
+}
+
+.contact-map {
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.contact-map iframe {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.write-us {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.write-us h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+.write-us h2 + p {
+  position: relative;
+}
+.write-us h2 + p:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 6px;
+  border-radius: 4px;
+  left: auto;
+  top: 11.5px;
+  transition: all;
+  background-color: rgb(55, 156, 244);
+  margin-left: 20px;
+}
+.write-us p {
+  font-weight: 500;
+  color: gray;
+}
+.write-us .row div {
+  margin-bottom: 19px;
+}
+.write-us .row div label {
+  display: block;
+  margin-bottom: 10px;
+}
+.write-us .row div input, .write-us .row div textarea {
+  border-radius: 0px;
+  border: 1px solid transparent;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.5s;
+}
+.write-us .row div input:focus, .write-us .row div textarea:focus {
+  border: 1px solid rgb(0, 145, 255);
+}
+
+.contacts {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.contacts h2 {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 13px;
+}
+.contacts h2 + p {
+  position: relative;
+}
+.contacts h2 + p:after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 6px;
+  border-radius: 4px;
+  left: auto;
+  top: 11.5px;
+  transition: all;
+  background-color: rgb(55, 156, 244);
+  margin-left: 20px;
+}
+.contacts p {
+  font-weight: 500;
+  color: gray;
+  position: relative;
+}
+.contacts .d-flex {
+  margin-bottom: 7px;
+}
+.contacts .d-flex b, .contacts .d-flex p {
+  margin: 0px;
+  white-space: nowrap;
+}
+.contacts .d-flex b {
+  margin-right: 5px;
+}
+.contacts .d-flex p {
+  margin-left: 5px;
+}
+.contacts .d-flex hr {
+  margin: 18px 5px 5px 5px;
+  width: 90%;
+  margin-top: 16px;
+  border-top: 1px dotted;
+  background: none;
+  opacity: 0.7;
+}
+.contacts .contact-link {
+  display: flex;
+}
+.contacts .contact-link a {
+  margin: 0;
+  width: 45px;
+  height: 45px;
+  border: 1px solid rgb(41, 110, 206);
+  line-height: 45px;
+  display: flex;
+  font-size: 20px;
+  color: rgb(60, 103, 210);
+  transition: all 0.5s;
+}
+.contacts .contact-link a:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-right: none;
+}
+.contacts .contact-link a:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-left: none;
+}
+.contacts .contact-link a:hover {
+  background-color: rgb(41, 110, 206);
+  color: white;
 }/*# sourceMappingURL=main.css.map */
