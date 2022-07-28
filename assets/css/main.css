@@ -4,46 +4,223 @@
   box-sizing: border-box;
 }
 
-.navbar-brand {
-  margin-left: 0px !important;
+header nav {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+header nav img {
+  width: 200px;
 }
 
-footer {
-  background-color: rgb(24, 48, 83);
-  padding-top: 30px;
+.header_top {
+  /* display:flex; */
+  /* justify-content: space-between; */
+  font-size: 14px;
 }
-footer .col-12 {
-  margin: 0px 0px 20px;
-  padding: 0px 30px;
+
+.header_top a {
+  text-decoration: none;
 }
-footer .col-12 h5, footer .col-12 p {
+
+.header_left a {
   color: white;
+  transition: 0.5s;
 }
-footer .col-12 h5 {
-  font-weight: bold;
-  margin-bottom: 20px;
+
+.header_left a:hover {
+  color: black;
 }
-footer .col-12 p {
-  margin-bottom: 10px;
-  color: rgba(167, 167, 167, 0.826);
-}
-footer .col-12 .link-info {
-  display: flex;
-}
-footer .col-12 .link-info a {
-  display: flex;
-  color: white;
-  font-size: 30px;
-  margin: 0 auto;
-}
-footer .last {
-  border-top: 1px solid white;
+
+.header_right a {
+  display: inline-block;
   text-align: center;
-  padding: 10px 0px;
+  line-height: 2.5rem;
+  font-size: 1.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: black;
+  border: 2px solid black;
 }
-footer .last span {
+
+.header_right a i {
+  transition: 0.5s;
+}
+
+.nav_custom a {
+  color: black;
+}
+
+.navbar-brand p i {
+  transform: skew(-10deg);
+  margin: 0px 0.7rem;
+}
+
+.nav-item {
+  margin: 0px 15px;
+}
+
+.nav-item a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.nav-item:hover a {
+  color: #2d85de;
+}
+
+.nav-item::after {
+  content: "";
+  display: block;
+  border-top: 7px solid #1e45a8;
+  width: 0px;
+  transition: 0.5s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-link:focus {
+  color: #1e45a8;
+}
+
+.active a {
+  color: #1e45a8;
+}
+
+.active::after {
+  width: 100%;
+}
+
+.dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.425);
+}
+
+.dropdown-menu li a {
+  color: aliceblue;
+}
+
+#navbarNavDropdown > ul > li.nav-item.dropdown:hover > ul > li > a {
   color: white;
-  font-size: 11px;
+  background-color: transparent;
+}
+
+#navbarNavDropdown > ul > li.nav-item.dropdown > ul > li:hover > a {
+  color: #4a8ac2;
+}
+
+/* FOOTER */
+footer {
+  background-color: #141415;
+  padding-top: 40px;
+}
+
+.footer_top h3 {
+  color: #2096b0;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+
+.footer_top p,
+.footer_top a {
+  color: #8b8b96;
+  font-size: 15px;
+  line-height: 2em;
+  margin-bottom: 0.7rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer_top a:hover {
+  color: white;
+}
+
+.footer_top p i {
+  color: #2387c1 !important;
+  margin-right: 0.7rem;
+}
+
+.footer_top .col-4 {
+  padding: 2rem;
+}
+
+.footer_top span {
+  color: #8b8b96;
+  font-size: 15px;
+  line-height: 2em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer_bottom {
+  margin-top: 3rem;
+}
+
+.footer_bottom label {
+  color: #2f89c9;
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.footer_bottom input {
+  padding: 14px;
+  border-radius: 0px;
+  border: none;
+  color: #888;
+  letter-spacing: 1px;
+}
+
+.footer_bottom button {
+  padding: 12px 35px;
+  border-radius: 0px;
+  border: none;
+  background-color: #24a6da;
+  letter-spacing: 1px;
+  transition: 0.5s;
+  color: white;
+}
+
+.footer_bottom button:hover {
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.form_copywrite {
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(250, 235, 215);
+  letter-spacing: 1px;
+  padding: 1rem 0px 1rem;
+  background-color: black;
+}
+
+.form_copywrite p {
+  margin-bottom: 0px;
+}
+
+.footer_info {
+  margin-bottom: 10px;
+  align-items: center;
+}
+.footer_info .footer-icon {
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_info .footer-icon i {
+  color: white;
 }
 
 .contact-link {
@@ -584,9 +761,9 @@ footer .last span {
 
 .home {
   position: relative;
-  height: 700px;
 }
 .home .heading {
+  position: relative;
   width: 100%;
   height: 700px;
   background-size: cover;
